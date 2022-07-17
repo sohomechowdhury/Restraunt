@@ -18,17 +18,28 @@
          img {
                 height: 600px;
                 width: 600px;
-             object-fit: contain;
+                object-fit: cover;
             }
             p{
                 font-size: 25px;
             }
-
-    
-        @media screen and (min-width:400px) {
+            
+        @media screen and (max-width: 380px) {
             img {
-                height: 350px;
-                width: 330px;
+                height: 399px;
+                width: 242px;
+            }
+
+            p {
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            img {
+                height: 250px;
+                width: 230px;
             }
 
             p {
@@ -37,7 +48,7 @@
             }
         }
 
-        @media screen and (min-width:450) and (max-width: 695px) {
+        @media screen and (min-width:500) and (max-width: 695px) {
             img {
                 height: 500px;
                 width: 445px;
@@ -98,7 +109,9 @@
                         <a class="nav-link" href="#bmenulst"><button class="btn btn-outline-primary btn3" id="bmenu">
                             বাঙ্গালী🌶️special</button></a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -110,7 +123,7 @@
 
 
             <div class="container-fluid" style="position:relative;z-index:1">
-                <img class="cover" src="cover.jpeg" alt="" style=" ">
+                <img class="cover" src="/cover.jpeg" alt="" style=" ">
             </div>
             <div class="container" style="position: absolute; z-index:2;">
                 <p class="intro">বাংলা খাবারের একটি নতুন সংস্করণ...সোহম চৌধুরীর... </p>
